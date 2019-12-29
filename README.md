@@ -1,4 +1,4 @@
-# Methematica-Learning
+# Mathematica-Learning
 Slot 
 #
 
