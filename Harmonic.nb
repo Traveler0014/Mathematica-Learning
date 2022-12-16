@@ -1,0 +1,133 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4509,        125]
+NotebookOptionsPosition[      3997,        107]
+NotebookOutlinePosition[      4427,        124]
+CellTagsIndexPosition[      4384,        121]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"func", "[", "\[Omega]_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"440", " ", "2", 
+     RowBox[{"N", "[", 
+      RowBox[{"\[Pi]", ",", "10"}], "]"}], " ", "t"}], "]"}], "+", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"440", " ", "\[Omega]", " ", "2", 
+     RowBox[{"N", "[", 
+      RowBox[{"\[Pi]", ",", "10"}], "]"}], " ", "t"}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Play", "[", 
+    RowBox[{
+     RowBox[{"func", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       FractionBox["1", "2"], ",", "2", ",", 
+       RowBox[{"1", "/", "3"}], ",", "3", ",", 
+       RowBox[{"1", "/", "4"}], ",", 
+       RowBox[{"2", "/", "3"}], ",", 
+       RowBox[{"3", "/", "2"}], ",", "4"}], "}"}]}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.84812795895865*^9, 3.848128145400835*^9}, {
+  3.8481281824886074`*^9, 3.848128283948004*^9}, {3.8481285838122544`*^9, 
+  3.8481285853624325`*^9}, {3.848130773365651*^9, 3.8481308307362614`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"8a0417b5-8c82-449e-93f9-01d8ed14d7fb"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = Rational[3, 2], Typeset`show$$ = True,
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], {1, 
+       Rational[1, 2], 2, 
+       Rational[1, 3], 3, 
+       Rational[1, 4], 
+       Rational[2, 3], 
+       Rational[3, 2], 4}}}, Typeset`size$$ = {
+    250., {55., 59.64088397790056}}, Typeset`update$$ = 0, Typeset`initDone$$,
+     Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Play[
+        $CellContext`func[$CellContext`x$$], {$CellContext`t, 0, 1}], 
+      "Specifications" :> {{$CellContext`x$$, {1, 
+          Rational[1, 2], 2, 
+          Rational[1, 3], 3, 
+          Rational[1, 4], 
+          Rational[2, 3], 
+          Rational[3, 2], 4}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{298., {104., 110.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.848128284686038*^9, 3.848128341422044*^9, 3.8481283878770723`*^9, 
+   3.848128420671962*^9, 3.848128462812646*^9, 3.84812858792255*^9, {
+   3.8481307766793995`*^9, 3.8481307817201557`*^9}, 3.8481308360969877`*^9, 
+   3.848139919715743*^9},ExpressionUUID->"fe62fd5f-90d7-46ec-8992-\
+c97902de6b50"]
+}, Open  ]]
+},
+WindowSize->{572.4, 626.4},
+WindowMargins->{{Automatic, 164.4000000000001}, {60, Automatic}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (2021\:5e742\:67085\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1a4a876d-8493-4e44-8e52-d86aa275965d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1255, 32, 128, "Input",ExpressionUUID->"8a0417b5-8c82-449e-93f9-01d8ed14d7fb"],
+Cell[1838, 56, 2143, 48, 233, "Output",ExpressionUUID->"fe62fd5f-90d7-46ec-8992-c97902de6b50"]
+}, Open  ]]
+}
+]
+*)
+
